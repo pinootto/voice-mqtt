@@ -57,8 +57,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      */
     private static final int REQUEST_READ_CONTACTS = 0;
 
-    private static final String URL_FOR_LOGIN = "https://magzdar.net/voiceMQTT/login.php";
-    private static final String URL_FOR_REGISTRATION = "https://magzdar.net/voiceMQTT/register.php";
+    private static final String URL_FOR_LOGIN = "https://xxx.net/voiceMQTT/login.php";
+    private static final String URL_FOR_REGISTRATION = "https://xxx.net/voiceMQTT/register.php";
 
     // UI references.
     private AutoCompleteTextView mEmailView;

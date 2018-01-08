@@ -1,0 +1,48 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/txvResult"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="100dp"
+		android:textColor="#000"
+		android:textSize="26sp"
+		android:textStyle="normal"/>
+
+	<ImageView
+		android:id="@+id/btnSpeak"
+		android:layout_width="100dp"
+		android:layout_height="100dp"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="60dp"
+		android:gravity="center"
+		android:onClick="getSpeechInput"
+		android:src="@drawable/ic_mic"/>
+
+	<TextView
+		android:id="@+id/rxvResult"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="200dp"
+		android:textSize="26sp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnSpeak"
+        android:layout_marginBottom="12dp"
+        android:text="Audio" />
+
+</RelativeLayout>

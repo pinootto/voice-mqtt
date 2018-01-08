@@ -19,7 +19,7 @@ base_dir = '/sys/bus/w1/devices/'
 device_folder = glob.glob(base_dir + '28*')[0]
 device_file = device_folder + '/w1_slave'
 
-topic_prefix = "j@qq.com"
+topic_prefix = "xx@qq.com"
 command_topic = topic_prefix + "/command"
 status_topic = topic_prefix + "/status"
 
@@ -74,16 +74,6 @@ def on_message(client, userdata, msg):
         result = data['EUR_CNY']['val']
         logging.debug(result)
         client.publish(status_topic, result)
-    # elif msg.payload.decode() == "off":
-    #     print("OFF")
-    #     response = requests.get('http://localhost:8081/switch')
-    #     print(response)
-    #     # client.disconnect()
-    # elif msg.payload.decode() == "switch":
-    #     print("SWITCH")
-    #     response = requests.get('http://localhost:8081/switch')
-    #     print(response)
-    #     # client.disconnect()
     else:
         logging.debug("unknown command")
 
